@@ -1,0 +1,84 @@
+.container {
+  border: 2px dotted #000;
+  width: 60vw;
+  height: 25vh;
+  margin-top: 2vh;
+}
+
+/* Sie kennen die Eigenschaften und Standardelemente von Block-Level-Elementen. */
+.block {
+  display: block;
+  border: 1px solid #000;
+  left: 1vw;
+  top: 2vh;
+}
+
+/* Sie kennen die Eigenschaften und Standardelemente von Inline-Elementen. */
+.inline {
+  display: inline;
+  border: 1px solid #000;
+  left: 1vw;
+  top: 2vh; 
+}
+
+/* Sie kennen die Eigenschaften und Standardelemente von Inline-Block-Elementen. */
+.inline-block {
+  display: inline-block;
+  border: 1px solid #000;
+  left: 1vw;
+  top: 2vh;
+}
+
+/* Sie kennen die CSS-Eigenschaft display mit Ihren Werten. */
+/* https://www.w3schools.com/CSSref/playit.asp?filename=playcss_position&preval=relative */
+.display {
+  display: inline; /* Zeigt ein Element als Inline-Element an (wie <span>). Alle Höhen- und Breiteneigenschaften haben keine Auswirkung */
+  display: block; /* Zeigt ein Element als Blockelement an (wie <p>). Es beginnt auf einer neuen Zeile und nimmt die gesamte Breite ein */
+  display: contents; /* Lässt den Container verschwinden und macht die untergeordneten Elemente zu untergeordneten Elementen des Elements auf der nächsthöheren Ebene im DOM */
+  display: flex; /* Zeigt ein Element als flexiblen Container auf Blockebene an */
+  display: grid; /* Zeigt ein Element als Grid-Container auf Blockebene an */
+  display: inline-block; /* Zeigt ein Element als Blockcontainer auf Inline-Ebene an. Das Element selbst ist als Inline-Element formatiert, aber Sie können Höhen- und Breitenwerte anwenden */
+  display: run-in; /* Zeigt ein Element je nach Kontext entweder als Block oder Inline an  */
+  display: initial; /* Setzt diese Eigenschaft auf ihren Standardwert. Lesen Sie mehr über die Initiale */
+  display: inherit; /* Erbt diese Eigenschaft von seinem übergeordneten Element. Lesen Sie mehr über erben */
+  display: none; /* Das Element wird vollständig entfernt */
+}
+
+/*  */
+.r {
+  position: relative;
+}
+
+.standart {
+  position: static;
+  border: 1px solid #000;
+  left: 1vw;
+  top: 2vh;
+}
+
+.relative {
+  position: relative;
+  border: 1px solid #000;
+  left: 1vw;
+  top: 2vh;
+}
+
+.absolute {
+  position: absolute;
+  border: 1px solid #000;
+  left: 5vw;
+  top: 8vh;
+}
+
+.fixed {
+  position: fixed;
+  border: 1px solid #000;
+  right: 1vw;
+  top: 46vh;
+}
+
+.sticky {
+  position: sticky;
+  border: 1px solid #000;
+  top: 0;
+}

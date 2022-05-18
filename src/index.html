@@ -6,12 +6,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./assets/pepe.gif">
   <script src="./script.js"></script>
-  <title>Document</title>
+  <title>CsS gRiD</title>
 </head>
 
 <body>
-
+  <p>Display Container</p>
+  <div class="container">
+    <div class="block">
+      Ich bin Block und ignoriere positionierungs CSS.
+    </div>
+    <div class="inline">
+      Ich bin Inline und nehme nur das, was ich brauche (Span).
+    </div>
+    <div class="inline">
+      Wenn Platz ist, gehe ich auf dieselbe Zeile wie andere, um diese aufzufüllen. (ich ignoriere auch
+      positionierungs CSS)
+    </div>
+    <div class="inline-block">
+      Ich bin Inline-Block. Ich funktioniere fast wie Inline, aber
+      weeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeen mein Text
+      sehr lang ist wird die ganze Box <i>genommen</i>. <b>Ausserdem ignoriere ich die max. grösse der Box, wenn der
+        Screen kleiner wird</b>
+    </div>
+  </div>
+  <div class="container r">
+    <div class="standart">
+      Ich bin standart, ich bin normal
+    </div>
+    <div class="relative">
+      Ich bin relativ. Ich bin normal, <b>ABER</b> ich <b>benutze positionierungs CSS</b>
+    </div>
+    <div class="absolute">
+      Ich bin absolute, ich ignoriere alles, ausser ein relative Container über mir
+    </div>
+    <div class="fixed">
+      Ich bin fixed, ich ignoriere <b>alles</b>. Wenn man Scrollen könnte würden ich mit Scrollen
+    </div>
+    <div class="sticky" style="margin-top: 12vh;">
+      Ich bin Sticky, Ich bin Teil des Codes der Seite und Scrolle mit der Seite mit -> <a
+        href="https://www.w3schools.com/CSSref/tryit.asp?filename=trycss_position_sticky"> Beispiel</a>
+    </div>
+  </div>
 </body>
 
 </html>
