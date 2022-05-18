@@ -1,8 +1,13 @@
 .container {
+  box-sizing: border-box;
   border: 2px dotted #000;
   width: 60vw;
   height: 25vh;
   margin-top: 2vh;
+}
+
+.r {
+  position: relative;
 }
 
 /* Sie kennen die Eigenschaften und Standardelemente von Block-Level-Elementen. */
@@ -44,11 +49,7 @@
   display: none; /* Das Element wird vollständig entfernt */
 }
 
-/*  */
-.r {
-  position: relative;
-}
-
+/* Sie verstehen die statische Positionierung. */
 .standart {
   position: static;
   border: 1px solid #000;
@@ -56,6 +57,7 @@
   top: 2vh;
 }
 
+/* Sie verstehen die relative Positionierung. */
 .relative {
   position: relative;
   border: 1px solid #000;
@@ -63,6 +65,7 @@
   top: 2vh;
 }
 
+/* Sie verstehen die absolute Positionierung. */
 .absolute {
   position: absolute;
   border: 1px solid #000;
@@ -70,6 +73,7 @@
   top: 8vh;
 }
 
+/* Sie verstehen die fixe Positionierung. */
 .fixed {
   position: fixed;
   border: 1px solid #000;
@@ -77,8 +81,125 @@
   top: 46vh;
 }
 
+/* Sie verstehen die "sticky" Positionierung. */
 .sticky {
   position: sticky;
   border: 1px solid #000;
   top: 0;
 }
+
+/* Sie kennen die Kombinatoren, die Selektoren verketten. */
+/* https://www.w3schools.com/Css/css_combinators.asp */
+
+/* Das folgende Beispiel wählt alle <p>-Elemente innerhalb von <div>-Elementen aus: */
+div p {
+  text-decoration: underline;
+}
+
+/* Das folgende Beispiel wählt alle <p>-Elemente aus, die Kinder eines <div>-Elements sind: */
+div > p {
+  color: blue;
+}
+
+/* Das folgende Beispiel wählt das erste <p>-Element aus, das nach <div>-Elementen kommt: */
+div + p {
+  font-size: 30px;
+}
+
+/* Beim ersten wird nichts gemacht, aber bei allen anderen */
+div ~ p {
+  letter-spacing: 5px;
+}
+
+/* Sie kennen das Float-Layout. */
+.float-left {
+  float: left;
+  border: 1px solid #000;
+}
+
+/* Sie kennen das Float-Layout. */
+.float-right {
+  float: right;
+  border: 1px solid #000;
+}
+
+/* Sie kennen das Box Model mit box-sizing: border-box-sizing. */
+.box {
+  /*
+    box sizing legt ein feste grösse vor, die durch nichts verändert wird
+    Beispiel:
+    - width ist 302px gross (2px wegen der Border)
+    - Mit Box-sizing wird alles nach ihnen gerichtet und die 2px "verschwinden"
+    - Jetzt aht die Box 300px als feste grösse und kann nichtmehr verändert werden
+  */
+  box-sizing: border-box;
+  overflow: hidden; /* damit das Bild / Gif nicht die grösse der Box übersteigt */
+  border: 1px solid #000;
+  width: 302px;
+  height: 202px;
+}
+
+/* Sie wissen welchen Einfluss Flexbox auf die Darstellung der Flex-Items nehmen kann. */
+/* https://loading.io/flexbox/ */
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: auto;
+  align-content: start;
+}
+
+/* Sie wissen welchen Einfluss Flexbox auf die Darstellung der Flex-Items nehmen kann. */
+.item {
+  flex: 1 1 auto;
+  margin: 10px;
+}
+
+/* Sie wissen, was CSS-Grid ist */
+/* Sie kennen die CSS-Eigenschaften von CSS-Grid für Grid Container und Grid Items. */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; 
+}
+
+.grid-child1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #7bdba6;
+}
+.grid-child2 {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: #7bdba6;
+}
+
+/* Sie kennen die Terminologie von CSS-Grid. */
+/* Sie wissen welchen Einfluss CSS-Grid auf die Darstellung der Grid-Items nehmen kann. */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 2fr 1fr 2fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.divColor {
+  background-color: #7bdba6;
+}
+
+/* gibt an das div3 an erster Stelle stehen soll */
+.div3 {
+  grid-column: 1 / 2; /* Von Line 1 bis 2 */
+  grid-row: 1 / 2; /* Von Dach 1 bis 2 */
+}
+
+/* das ding inder Mitte */
+.div6 { 
+  grid-column: 1 / 6;
+  grid-row: 2 / 3;
+  /* grid-area: 2 / 1 / 3 / 6; */
+}
+
+

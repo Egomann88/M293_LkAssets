@@ -12,18 +12,26 @@
 </head>
 
 <body>
+  <!-- Display Container -->
   <p>Display Container</p>
   <div class="container">
+    <!-- Sie kennen die Eigenschaften und Standardelemente von Block-Level-Elementen. -->
     <div class="block">
       Ich bin Block und ignoriere positionierungs CSS.
     </div>
+
+    <!-- Sie kennen die Eigenschaften und Standardelemente von Inline-Elementen. -->
     <div class="inline">
       Ich bin Inline und nehme nur das, was ich brauche (Span).
     </div>
+
+    <!-- Sie kennen die Eigenschaften und Standardelemente von Inline-Elementen. -->
     <div class="inline">
       Wenn Platz ist, gehe ich auf dieselbe Zeile wie andere, um diese aufzufüllen. (ich ignoriere auch
       positionierungs CSS)
     </div>
+
+    <!-- Sie kennen die Eigenschaften und Standardelemente von Inline-Block-Elementen. -->
     <div class="inline-block">
       Ich bin Inline-Block. Ich funktioniere fast wie Inline, aber
       weeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeen mein Text
@@ -31,23 +39,218 @@
         Screen kleiner wird</b>
     </div>
   </div>
+  <!-- Position Container -->
+  <p>Position Container</p>
   <div class="container r">
+    <!-- Sie verstehen die statische Positionierung. -->
     <div class="standart">
       Ich bin standart, ich bin normal
     </div>
+
+    <!-- Sie verstehen die relative Positionierung. -->
     <div class="relative">
       Ich bin relativ. Ich bin normal, <b>ABER</b> ich <b>benutze positionierungs CSS</b>
     </div>
+
+    <!-- Sie kennen den Unterschied von der Standardpositionierung vs. absolute Positionierung. -->
+    <!-- Sie verstehen die absolute Positionierung. -->
     <div class="absolute">
       Ich bin absolute, ich ignoriere alles, ausser ein relative Container über mir
     </div>
+
+    <!-- Sie verstehen die fixe Positionierung. -->
     <div class="fixed">
-      Ich bin fixed, ich ignoriere <b>alles</b>. Wenn man Scrollen könnte würden ich mit Scrollen
+      Ich bin fixed, ich ignoriere <b>alles</b>. Ich bin immer da; Mich wirst du nicht los ┬┴┬┴┤(･_├┬┴┬┴
     </div>
+
+    <!-- Sie verstehen die "sticky" Positionierung. -->
     <div class="sticky" style="margin-top: 12vh;">
       Ich bin Sticky, Ich bin Teil des Codes der Seite und Scrolle mit der Seite mit -> <a
-        href="https://www.w3schools.com/CSSref/tryit.asp?filename=trycss_position_sticky"> Beispiel</a>
+        href="https://www.w3schools.com/CSSref/tryit.asp?filename=trycss_position_sticky" target="_blank"> Beispiel</a>
     </div>
+  </div>
+
+  <!-- Kombinatoren und Selektoren -->
+  <p> Kombinatoren und Selektoren</p>
+  <div class="container">
+    <p>Muh die Kuh</p>
+    <p>Muh die Kuh</p>
+    <p>Muh die Kuh</p>
+    <p>Muh die Kuh</p>
+    <p>Muh die Kuh</p>
+    <p>Muh die Kuh</p>
+  </div>
+
+  <!-- Layout -->
+  <p>Was ist ein Layout?</p>
+  <div class="container">
+    <!-- Sie wissen was Layout ist. -->
+    <div>Ansicht einer Seite z.B. diese Seite hat ein Links Layout</div>
+    <!-- Sie kennen den Unterschied von Seitenlayout vs. Komponentenlayout. -->
+    <div>K.A.</div>
+    <!-- Sie kennen das Float-Layout. -->
+    <div class="float-left">
+      Linker Text
+    </div>
+    <div class="float-right">
+      Rechter Text
+    </div>
+    <!-- Sie kennen die Gemeinsamkeiten und Unterschiede von absoluter Positionierung und Floats. -->
+    <div style="margin-top: 20px;">
+      Float umfliesst ein Element oder Text, absoulte ist vom Flow der Seite ausgezogen und nimmt eine feste Position an
+    </div>
+  </div>
+
+  <!-- Box mode  -->
+  <p>Box model</p>
+  <div class="container" style="display: flex;">
+    <div class="box" style="display: flex;">
+      <img src="./assets/pepe.gif" alt="">
+    </div>
+    <div>
+      <div>
+        box sizing legt ein feste grösse vor, die durch nichts verändert wird.
+      </div>
+      <div>
+        Beispiel:
+      </div>
+      <ol>
+        <li>width ist 302px gross (2px wegen der Border)</li>
+        <li>Mit Box-sizing wird alles nach ihnen gerichtet und die 2px "verschwinden"</li>
+        <li>Jetzt aht die Box 300px als feste grösse und kann nichtmehr verändert werden</li>
+      </ol>
+    </div>
+  </div>
+
+  <p>Flexbox</p>
+  <div class="container">
+    <!-- Sie wissen, was Flexbox ist. -->
+    <p>Flexbox ist vereinfachtes grid</p>
+
+    <!-- Sie kennen die CSS-Eigenschaften von Flexbox für Flex Container und Flex Items. -->
+    <!-- Sie kennen die Terminologie von Flexbox. -->
+    <ul>
+      <li>display: flex --> <k style="margin-left: 20px;">aktiivert den flex (̿▀̿‿ ̿▀̿ ̿)</k>
+      </li>
+      <li>flex-wrap: wrap --> <k style="margin-left: 20px;">controls how wrapping works</k>
+      </li>
+      <li>flex-direction: row --> <k style="margin-left: 20px;">direction of content flow</k>
+      </li>
+      <li>justify-content: start --> <k style="margin-left: 20px;">align along the content flow ( main direction )</k>
+      </li>
+      <li>align-items: auto --> <k style="margin-left: 20px;">vertical align within a line ( cross direction )</k>
+      </li>
+      <li>align-content: start --> <k style="margin-left: 20px;">vertical align within container</k>
+      </li>
+      <li>flex-grow: start --> <k style="margin-left: 20px;">controls the proportion of size growing</k>
+      </li>
+      <li>flex-shrink: start --> <k style="margin-left: 20px;">controls the proportion of size shrinking</k>
+      </li>
+    </ul>
+
+  </div>
+
+  <!-- Sie wissen welchen Einfluss Flexbox auf die Darstellung der Flex-Items nehmen kann. -->
+  <!-- https://loading.io/flexbox/ -->
+  <p>Flexbox-Einfluss / Beispiel</p>
+  <div class="container">
+    <div class="flexbox">
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+    </div>
+    <div class="flexbox">
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+    </div>
+    <div class="flexbox">
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+    </div>
+    <div class="flexbox">
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+    </div>
+    <div class="flexbox">
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+      <div class="item" style="background-color: black;">f</div>
+    </div>
+    <div class="flexbox">
+      <div class="item" style="background-color: black;">f</div>
+    </div>
+  </div>
+
+  <!-- Sie wissen, was CSS-Grid ist. -->
+  <p>CSS-Grid</p>
+  <div class="container grid">
+    <div class="grid-child1">Unstopable Blaze 1</div>
+    <div class="grid-child2">Unstopable Blaze 2</div>
+  </div>
+
+  <!-- Sie kennen die Terminologie von CSS-Grid. -->
+  <p>CSS-Grid Terminologie</p>
+  <div class="container">
+    <ul>
+      <li>display: grid;</li>
+      <li>grid-template-columns: repeat(5, 1fr) --> <k style="margin-left: 10px;">Macht 5-Mal das 1fr (abstände
+          gleichmässig verteilen) <b>Horizontal</b></k>
+      </li>
+      <li>grid-template-rows: 2fr 1fr 2fr --> <k style="margin-left: 10px;">Macht 2fr Oben und Unten ; 1fr in der
+          Mitte <b>Vertikal</b></k>
+      </li>
+      <li>grid-column-gap: 15px --> <k style="margin-left: 10px;">Horizontaler Abstand</k>
+      </li>
+      <li>grid-row-gap: 15px --> <k style="margin-left: 10px;">Vertikaler Abstand</k>
+      </li>
+      <li>grid-column: 1 / 6 --> <k style="margin-left: 10px;">Fängt bei <i>"Teil"</i> 1 (ganz Links) an und geht bis
+          <i>"Teil"</i> 6 (ganz rechts)
+        </k>
+      </li>
+      <li>grid-row: 2 / 3 --> <k style="margin-left: 10px;">Fängt bei Reihe 2 an und geht bis Reihe 3</k>
+      </li>
+      <li>grid-area: 1 / 2 / 3 / 6 --> <k style="margin-left: 10px;">1, 2 sind die Anfangswerte ; 3, 6 sind die
+          Schlusswerte (bis dahin gehen sie)</k>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Sie kennen die Terminologie von CSS-Grid. -->
+  <!-- Sie wissen welchen Einfluss CSS-Grid auf die Darstellung der Grid-Items nehmen kann. -->
+  <div class="container parent">
+    <div class="divColor">div1</div>
+    <div class="divColor">div2</div>
+    <div class="divColor">div3</div>
+    <div class="divColor">div4</div>
+    <div class="divColor">div5</div>
+    <div class="divColor div6">div6</div>
+    <div class="divColor">div7</div>
+    <div class="divColor">div8</div>
+    <div class="divColor">div9</div>
+    <div class="divColor">div10</div>
+    <div class="divColor">div11</div>
+  </div>
+
+  <!-- Sie wissen, das Flexbox für eindimensionale Layouts, CSS-Grid für zweidimensionale Layouts verwendet wird. -->
+  <p>Flex -> eindimensional || Grid -> zweidimensional</p>
+  <div class="container">
+    <p>Ja</p>
   </div>
 </body>
 
