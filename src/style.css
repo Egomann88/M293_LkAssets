@@ -1,20 +1,3 @@
-* {
-  margin: 0;
-}
-
-
-.container {
-  box-sizing: border-box;
-  border: 2px dotted #000;
-  width: 60vw;
-  height: 25vh;
-  margin-top: 2vh;
-}
-
-.r {
-  position: relative;
-}
-
 /* Sie kennen die Eigenschaften und Standardelemente von Block-Level-Elementen. */
 .block {
   display: block;
@@ -172,12 +155,7 @@ div ~ p {
   grid-row-gap: 10px; 
 }
 
-.grid-child1 {
-  grid-area: 1 / 1 / 2 / 2;
-  background-color: #7bdba6;
-}
-.grid-child2 {
-  grid-area: 1 / 2 / 2 / 3;
+.grid-child1, .grid-child2  {
   background-color: #7bdba6;
 }
 
@@ -207,5 +185,3 @@ div ~ p {
   grid-row: 2 / 3;
   /* grid-area: 2 / 1 / 3 / 6; */
 }
-
-

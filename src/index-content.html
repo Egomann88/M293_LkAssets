@@ -14,9 +14,15 @@
 
 <body>
   <div style="margin-left: 1vw;">
+    <header class="header">
+      <a onclick="scroll2('css')">CSS-Classes</a>
+      <a onclick="scroll2('grid')">Layout / Grid</a>
+      <a onclick="scroll2('js'); alert('In der Console (F12)')">JavaScript</a>
+    </header>
+
 
     <!-- Display Container -->
-    <p>Display Container</p>
+    <p id="css">Display Container</p>
     <div class="container">
       <!-- Sie kennen die Eigenschaften und Standardelemente von Block-Level-Elementen. -->
       <div class="block">
@@ -87,7 +93,7 @@
     </div>
 
     <!-- Layout -->
-    <p>Was ist ein Layout?</p>
+    <p id="grid">Was ist ein Layout?</p>
     <div class="container">
       <!-- Sie wissen was Layout ist. -->
       <div>Ansicht einer Seite z.B. diese Seite hat ein Links Layout</div>
@@ -257,7 +263,7 @@
     </div>
 
     <!-- Sie wissen, das Flexbox für eindimensionale Layouts, CSS-Grid für zweidimensionale Layouts verwendet wird. -->
-    <p>Flex -> eindimensional || Grid -> zweidimensional</p>
+    <p id="js">Flex -> eindimensional || Grid -> zweidimensional</p>
     <div class="container">
       <p>Ja</p>
     </div>

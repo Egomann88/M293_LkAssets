@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+}
+
+.container {
+  box-sizing: border-box;
+  border: 2px dotted #000;
+  width: 60vw;
+  height: 25vh;
+  margin-top: 2vh;
+}
+
+.r {
+  position: relative;
+}
+
+header {
+  display: sticky;
+  margin-left: -5px;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  padding: 20px 10px;
+  background-color: #f1f1f1;
+}
+
+/* header links */
+header a {
+  float: left;
+  padding: 12px;
+  color: black;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Style logo link */
+header a:hover {
+  color: black;
+  background-color: #ddd;
+}
