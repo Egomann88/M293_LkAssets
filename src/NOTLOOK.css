@@ -36,6 +36,13 @@ header a {
   text-decoration: none;
 }
 
+.big {
+  float: left;
+  padding: 12px;
+  color: black;
+  font-size: 24px;
+}
+
 /* Style logo link */
 header a:hover {
   color: black;
