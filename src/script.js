@@ -1,8 +1,9 @@
-window.onload = () => {
-  //alert('Aboniert meinen Kanal: Gilganos Playing Games');
-  console.log('%cAboniert meinen Kanal: %cGilganos Playing Games', 'font-size: 30px;', 'font-size: 30px; color: blue; font-weight: bold');
-  //loadPage();
+window.onload = function init() {
+  this.loadPage();
 }
+
+// functions
+
 
 /**
  * @param {String} url - address for the HTML to fetch
@@ -13,24 +14,24 @@ async function fetchHtmlAsText(url) {
 }
 
 /**
- * 
- * @returns 
- */
-async function getScreenSize() {
-  if (screen.width >= 1024)
-    return true;
-
-  return false;
-}
-
-/**
  * tests and loads a page
  */
 async function loadPage() {
   let html = "Not-Supported.html";
-  if (await getScreenSize()) {
+  if (await checkScreenSize())
     html = "index-content.html";
-  }
+
   const contentDiv = document.getElementById("content");
-  contentDiv.innerHTML = fetchHtmlAsText(html);
+  contentDiv.innerHTML = await fetchHtmlAsText(html);
+}
+
+/**
+ * 
+ * @returns 
+ */
+async function checkScreenSize() {
+  if (screen.width >= 1024)
+    return true;
+
+  return false;
 }
